@@ -21,13 +21,8 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
-        $data = $request->all();
-        // dd($data['name']);
-        Contact::create([
-            'name' => $data['name'],
-            'address' => $data['address'],
-            'phone' => $data['phone'],
-        ]);
+        $input=$request->all();
+        Contact::create($input);
         return redirect('/');
     }
 
@@ -46,11 +41,15 @@ class ContactController extends Controller
 
     public function update(Request $request, $id)
     {
-        return hi;
+        $contact=Contact::find($id);
+        $input=$request->all();
+        $contact->update($input);
+        return redirect('/');
     }
 
     public function destroy($id)
     {
-        //
+        Contact::destroy($id);
+        return redirect('/');
     }
 }
