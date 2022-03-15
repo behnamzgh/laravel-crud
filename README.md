@@ -9,7 +9,7 @@ cd laravel-crud
 ````
 composer install
 ````
-4. copy .env file
+4. Copy .env file
 ````
 cp .env.example .env
 ````
@@ -22,7 +22,7 @@ php artisan key:generate
 ````
 php artisan migrate
 ````
-8. finally open your localhost:8000
+8. Finally open your localhost:8000
 ````
 php artisan serve
 ````
