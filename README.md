@@ -1,4 +1,6 @@
 # laravel 8 crud application example
+## screenshot
+![alt text](storage/screenshot/1.png)
 ### Installation
 1. Clone repo
 2. Change directory
@@ -27,5 +29,3 @@ php artisan migrate
 php artisan serve
 ````
 
-## screenshot
-![alt text](storage/screenshot/1.png)
