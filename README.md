@@ -1,4 +1,4 @@
-# laravel 8 crud application
+# laravel 8 crud application example
 ### Installation
 1. Clone repo
 2. Change directory
@@ -21,6 +21,10 @@ php artisan key:generate
 7. Migrate
 ````
 php artisan migrate
+````
+8. finally open your localhost:8000
+````
+php artisan serve
 ````
 
 ## screenshot
